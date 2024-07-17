@@ -15,6 +15,7 @@ def login(request):
             senha = form['senha'].value()
 
         usuario = auth.authenticate(
+            request ,
             username = nome,
             password = senha,
         )
